@@ -1,0 +1,520 @@
+@font-face {
+    font-family: GeorgianFont;
+    src: url(./bpg_nino_mtavruli_normal.ttf);
+}
+
+body{
+    padding: 0px;
+    margin: 0px;
+    font-family: GeorgianFont;
+    
+}
+
+p{
+  margin: 0px;
+}
+
+header a {
+  color: white;
+}
+
+header a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+    position: fixed;
+    background-color: white;
+    z-index: 1000;
+}
+
+main{
+  background: url(./Photo/teemo-background.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover!important;
+    -moz-background-size: cover!important;
+    -o-background-size: cover!important;
+    background-size: cover!important;
+    padding-top:100px ;
+    /* background-color: #ffffff; */
+    /* background-image: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%); */
+}
+
+.button-52 {
+    color: whitesmoke;
+  font-size: 16px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 13px 20px 13px;
+  outline: 0;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-52:after {
+  content: "";
+  background-color:#5072A7!important;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+.button-52:hover:after {
+  top: 0px;
+  left: 0px;
+}
+
+@media (min-width: 768px) {
+  .button-52 {
+    padding: 13px 50px 13px;
+  }
+}
+
+
+/* CSS */
+.button-48 {
+  appearance: none;
+  background-color: #FFFFFF;
+  border-width: 0;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1em;
+  margin: 0;
+  opacity: 1;
+  outline: 0;
+  padding: 1.5em 2.2em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-rendering: geometricprecision;
+  text-transform: uppercase;
+  transition: opacity 300ms cubic-bezier(.694, 0, 0.335, 1),background-color 100ms cubic-bezier(.694, 0, 0.335, 1),color 100ms cubic-bezier(.694, 0, 0.335, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+
+.button-48:before {
+  animation: opacityFallbackOut .5s step-end forwards;
+  backface-visibility: hidden;
+  background-color: #EBEBEB;
+  clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: translateZ(0);
+  transition: clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1), -webkit-clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1);
+  width: 100%;
+}
+
+.button-48:hover:before {
+  animation: opacityFallbackIn 0s step-start forwards;
+  clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
+}
+
+.button-48:after {
+  background-color: #FFFFFF;
+}
+
+.button-48 span {
+  z-index: 1;
+  position: relative;
+}
+
+.First-Aside{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;   
+   
+}
+.First-Aside > h1 {
+    font-size: 40px; 
+    margin: 0px;
+}
+
+.League-Icon{
+    height: 80px;
+    width: auto;
+}
+
+.Second-Aside{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    width: 50%;
+}
+
+.search-champion{
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  height: 300px;
+}
+
+#card-section{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 90%;
+  height: auto;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.Champions-card{
+  margin: 15px;
+  height: 250px;
+  width: 350px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #4a4e4d ;
+  color: white;
+  flex-direction: column;
+  align-items: center;
+  border: thick double #4a4e4d ;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+.card-img-section{
+  height: 30%;
+  width: 100%;
+}
+
+.card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-txt-section{
+  height: 55%;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.blue-essence{
+  height: 20px;
+}
+
+.know-more-card{
+  height: 15%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+}
+
+.know-more-card > a {
+  margin: 5px;
+}
+
+/* Runes css */
+
+.runes-card{
+  opacity: 0.9;
+  width: 40%;
+  height: 70vh;
+  background-color: #2c274f;
+  color: white;
+  
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.runes-card-top-aside{
+  height: 20%;
+  border-bottom: 2px white;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  border-bottom: 6px white double;
+}
+
+.runes-card-top-aside > h1 {
+  opacity: 1;
+  font-size: 50px;
+}
+
+.runes-card-champion-face{
+  opacity: 1!important;
+  height: 250px;
+  width: 250px;
+  object-fit: cover;
+}
+
+.runes-card-bottom-aside{
+  display: flex;
+  height: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rune-article{
+  height: 40%;
+  width: 90%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  align-items: center;
+}
+
+.rune-img{
+  background-color: black;
+  height: 60px;
+  width: 60px;
+  border: 2.5px white solid;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 10px;
+}
+
+.runes-image-div{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  align-items: center;
+  width: 70%;
+}
+
+/* Champion Card  */
+.champions-card{
+  margin:15px;
+  height: 250px;
+  width: 250px;
+  background-color: #2c274f;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 5px;
+  transition: transform .2s;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+.champions-card:hover{
+  transform: scale(1.05);
+}
+
+.lane-aside{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 97%;
+  height: 10%;
+}
+
+.lane-image{
+  height: 20px;
+  width: 20px;
+  object-fit: cover;
+
+}
+
+.blue-assence-article{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.blue-essence{
+  height: 20px;
+  width: auto;
+}
+
+.champions-card-info-aside{
+    height: 90%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.champion-img{
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+}
+
+.image-article{
+  overflow: hidden;
+  height: 150px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -40px;
+}
+
+.blue-assence-article > p {
+  font-size: 16px;
+  margin: 0px;
+}
+
+.champions-card-info-aside > a {
+  display: inline-block;
+  transition: .8s;
+  font-weight:bold;
+  text-decoration:none;
+  color: #fff;
+  }
+.champions-card-info-aside a:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  }
+
+  .name-p{
+    font-size: 20px;
+  }
+
+.search-champion > aside {
+  color: white;
+  font-weight: bold;
+}
+
+.lane-image-rune{
+  height: 40px;
+  width: 40px;
+  margin: 15px;
+}
+
+.runes-card-top-aside h3 {
+  margin: 0px;
+  margin-left: 30px;
+}
+
+.runes-know-more{
+  height: auto;
+  width: 96%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  height: 28%;
+}
+
+.runes-know-more > a {
+  font-size: 18px;
+  display: inline-block;
+  transition: .8s;
+  font-weight:bold;
+  text-decoration:none;
+  color: #fff;
+  }
+
+  @media (max-width: 1000px){
+    header{
+      flex-direction: column;
+    }
+    .Third-Aside{
+      display: none;
+    }
+    .League-Icon{
+      height: 30px!important;
+      width: 30px!important;
+      margin-right: 5px;
+    }
+    .First-Aside h1{
+      font-size: 15px;
+      margin-left: 5px;
+    }
+    .First-Aside{
+      height: 30%;
+      width: 100%;
+      justify-content: center;
+    }
+    .Second-Aside{
+      height: 70%;
+      width: 100%;
+    }
+    .button-52{
+      font-size: 10px;
+    }
+
+    .search-champion {
+      /* flex-direction: column; */
+      font-size: 15px;
+      width: 100%;
+      flex-wrap: wrap;
+    }
+    .search-champion aside {
+      width: 49%;
+      height: 33%;
+    }
+
+    .search-btn-aside{
+      display: flex;
+      justify-content: center;
+      height: auto;
+      padding-top: 0.8em;
+      padding-right: 2.0em;
+      padding-bottom: 0.8em;
+      padding-left: 2.0em;
+    }
+    #card-section {
+      justify-content: center;
+    }
+    .runes-card{
+      width: 95%;
+    }
+
+    .runes-card-top-aside h3{
+      font-size: 15px;
+    }
+
+    .lane-image-rune{
+      height: 20px;
+      width: 20px;
+    }
+
+    .runes-card-champion-face{
+      height: 150px;
+      width: 150px;
+    }
+
+    .rune-img{
+      margin: 5px;
+      height: 40px;
+      width: 40px;
+    }
+  }
