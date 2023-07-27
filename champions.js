@@ -254,7 +254,7 @@ function CodeToHtml(name , role , imageLink , price) {
     </aside>
     <aside class="champions-card-info-aside">
         <article class="image-article">
-            <img class="champion-img" src="./Photo/Champs/${name}.png" alt="">
+            <img class="champion-img" src="./Photo/${name}.png" alt="">
         </article>
         <p class="name-p">${name}</p>
         <a type="button" class="runes-btn">ნახეთ რუნები</a>
